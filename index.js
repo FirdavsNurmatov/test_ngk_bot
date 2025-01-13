@@ -59,6 +59,7 @@ bot.on("message:document", async (ctx) => {
   }
 });
 
+
 bot.on("message:video", async (ctx) => {
   if (ctx.session?.adminAction === "waitingForFile") {
     return adminCommands.addLiterature(ctx);
